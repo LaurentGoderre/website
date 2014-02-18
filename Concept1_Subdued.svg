@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="445.27429"
+   height="472.76935"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="MOG_Subdued.svg"
+   inkscape:export-filename="C:\Users\Laurent\Desktop\MOGPatch_Subdued.png"
+   inkscape:export-xdpi="199.89926"
+   inkscape:export-ydpi="199.89926">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3773"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#5c5c3f;stop-opacity:1;"
+         offset="0"
+         id="stop3775" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3767"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#485239;stop-opacity:1;"
+         offset="0"
+         id="stop3769" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3773"
+       id="linearGradient3777"
+       x1="92.75"
+       y1="830.35974"
+       x2="375.25"
+       y2="830.35974"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.1189389"
+     inkscape:cx="83.21935"
+     inkscape:cy="245.76856"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="in"
+     inkscape:window-width="1680"
+     inkscape:window-height="998"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-grids="false"
+     inkscape:snap-to-guides="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <sodipodi:guide
+       orientation="0,1"
+       position="-25,107.5"
+       id="guide3912" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-36.628472,139.52283"
+       id="guide3008" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-37.628472,325.52283"
+       id="guide3042" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-195.16147,310.06632"
+       id="guide3076" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-11.628472,-585.11322)">
+    <path
+       style="fill:url(#linearGradient3767);fill-opacity:1;stroke:#000000;stroke-width:6.05555582000000040;stroke-miterlimit:4;stroke-opacity:1"
+       d="m 234,-14.21875 c -96.98922,0 -180.658847,57.010974 -219.34375,139.34375 L 235.5,232 453.875,126.3125 C 415.43836,43.342881 331.45335,-14.21875 234,-14.21875 z"
+       id="path3034"
+       inkscape:connector-curvature="0"
+       transform="translate(0,602.35975)" />
+    <path
+       style="fill:url(#linearGradient3767);fill-opacity:1;stroke:#000000;stroke-width:5.50955676999999970;stroke-miterlimit:4;stroke-opacity:1"
+       d="m 229.13649,854.99797 -186.0179,90.03881 c 38.119753,65.81572 109.3124,110.09102 190.84249,110.09102 80.02466,0 150.0946,-42.6606 188.70158,-106.47258 L 229.13649,854.99797 z"
+       id="path3006"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:url(#linearGradient3767);fill-opacity:1;stroke:#000000;stroke-width:4.50000000000000000;stroke-miterlimit:4;stroke-opacity:1"
+       d="m 385.71428,212.85715 c 0,-99.41126 -80.58875,-180.000003 -180,-180.000003 -99.41126,0 -180.000001,80.588743 -180.000001,180.000003 0,99.41125 80.588741,180 180.000001,180 99.41125,0 180,-80.58875 180,-180 z"
+       id="path3757"
+       transform="translate(28.285721,617.5026)"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Agency FB;-inkscape-font-specification:Agency FB Bold"
+       id="text3759"
+       sodipodi:linespacing="125%"><textPath
+         xlink:href="#path2998"
+         id="textPath3003"
+         style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000000;font-family:Agency FB;-inkscape-font-specification:Agency FB Bold">MILSIM OPERATIONAL GROUP</textPath></text>
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bodoni MT;-inkscape-font-specification:Bodoni MT"
+       id="text3763"
+       sodipodi:linespacing="125%"
+       transform="translate(0,-4)"><textPath
+         xlink:href="#path3890"
+         id="textPath3895"><tspan
+   id="tspan3765"
+   style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;font-family:Bodoni MT;-inkscape-font-specification:Bodoni MT"
+   dy="0 0 0 0 0 0 0 0 0 0 0 0 0 5.1700006 -5.1700006">Socii stamus <tspan
+   style="font-weight:bold;-inkscape-font-specification:Bodoni MT Bold;fill:#000000"
+   id="tspan3004">·</tspan> divisi cadimus</tspan></textPath></text>
+    <path
+       id="path3890"
+       d="M 69.506313,965.28302 C 144.02243,1056.1304 278.076,1069.3694 368.92335,994.85334 459.77069,920.33718 473.00975,786.28361 398.49363,695.43627 323.97751,604.58891 189.92402,591.34997 99.076686,665.86607 8.2293538,740.38219 -5.0098063,874.43567 69.506313,965.28302 z"
+       style="fill:none;stroke:#ff0000;stroke-width:1.08109987;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:none"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#ff0000;stroke-width:0.97967571;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:none"
+       d="M 67.279825,734.13751 C 122.47742,642.86964 241.86702,611.96261 333.94402,665.10462 426.02101,718.24663 455.91775,835.31387 400.72018,926.58176 345.52257,1017.8497 226.13291,1048.7568 134.05587,995.61474 41.978994,942.47269 12.0822,825.40538 67.279825,734.13751 z"
+       id="path2998" />
+    <path
+       id="path3045"
+       d="m 373.50617,830.35975 c 0,-77.04714 -62.45904,-139.50618 -139.50617,-139.50618 -77.04713,0 -139.506173,62.45904 -139.506173,139.50618 0,77.04713 62.459043,139.50617 139.506173,139.50617 77.04713,0 139.50617,-62.45904 139.50617,-139.50617 z"
+       style="fill:url(#linearGradient3777);fill-opacity:1;stroke:#000000;stroke-width:3.48765445000000000;stroke-miterlimit:4;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:url(#linearGradient3767);fill-opacity:1;stroke:#000000;stroke-width:4.50000000000000000;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 173.97092,890.68982 c 9.51481,0.2093 13.56492,-11.79492 29.33306,-9.76732 5.83444,0.75025 10.38293,12.74152 5.19536,20.92357 -5.45408,8.60241 -12.47156,26.312 -2.06895,27.33057 8.13343,0.79641 12.0016,-2.3022 27.04797,-2.30551 12.44555,-0.003 19.56953,3.10262 27.71015,2.30551 10.40262,-1.01857 3.38513,-18.72816 -2.06895,-27.33057 -5.18756,-8.18205 -0.63907,-20.17332 5.19536,-20.92357 15.76814,-2.0276 19.86423,9.97662 29.37904,9.76732 8.96707,-0.19724 33.5961,-45.84392 -60.22618,-167.27784 -91.76226,121.36497 -68.46393,167.0806 -59.49686,167.27784 z"
+       id="path3062"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssscsssscs" />
+  </g>
+</svg>
