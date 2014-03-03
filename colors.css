@@ -1,21 +1,28 @@
 /* Eagle*/
 
-.base{fill: #dadada;}
-.borders{fill: #222;}
-.shading{fill: #c6c6c6;}
-.globe{fill: #b3b3b3}
+.base{fill: #555;}
+.borders{fill: #000;}
+.shading{fill: #444;}
+.globe{fill: #333;}
 
 /* Patch */
 
-.outer, .background{
+.outer {
 	fill: #000;
 }
 
-.inner, .leaf, .text {
-	fill: #dfcb4e;
+.background{
+	fill: url(Multicam.svg#pattern);
+	stroke:#000;
+	stroke-width: 4;
 }
 
-.text {
-	stroke: #222;
+.inner{
+	fill: #333;
+}
+
+.leaf, .text {
+	fill: #3b3c2e;
+	stroke: #000;
 	stroke-width: 2;
 }
