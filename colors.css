@@ -7,11 +7,11 @@
 
 /* Patch */
 
-.background{
+.outer, .background{
 	fill: #000;
 }
 
-.foreground, .text {
+.inner, .leaf, .text {
 	fill: #dfcb4e;
 }
 
