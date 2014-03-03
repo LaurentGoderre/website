@@ -1,0 +1,23 @@
+/* Eagle*/
+
+.base{fill: #dadada;}
+.borders{fill: #222;}
+.shading{fill: #c6c6c6;}
+.globe{fill: #b3b3b3}
+
+/* Flag */
+
+.background{
+	fill: #000;
+}
+
+.foreground {
+	fill: #9c9c9c;
+	opacity: 0.8;
+}
+
+.text {
+	fill: #ffff00;
+	stroke: #555;
+	stroke-width: 7;
+}
