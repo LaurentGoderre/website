@@ -5,19 +5,17 @@
 .shading{fill: #c6c6c6;}
 .globe{fill: #b3b3b3}
 
-/* Flag */
+/* Patch */
 
 .background{
 	fill: #000;
 }
 
-.foreground {
-	fill: #9c9c9c;
-	opacity: 0.8;
+.foreground, .text {
+	fill: #dfcb4e;
 }
 
 .text {
-	fill: #ffff00;
-	stroke: #555;
-	stroke-width: 7;
+	stroke: #222;
+	stroke-width: 2;
 }
