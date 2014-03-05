@@ -49,7 +49,7 @@ module.exports = ->
 		"deploy"
 		"Build and deploy artifacts to wet-boew-dist"
 		[
-
+			"gh-pages:travis"
 		]
 	)
 
