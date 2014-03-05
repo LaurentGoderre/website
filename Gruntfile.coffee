@@ -46,6 +46,14 @@ module.exports = ->
 	)
 
 	@registerTask(
+		"deploy"
+		"Build and deploy artifacts to wet-boew-dist"
+		[
+
+		]
+	)
+
+	@registerTask(
 		"server"
 		"Run the Connect web server for local repo"
 		[
