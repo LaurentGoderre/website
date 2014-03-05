@@ -110,11 +110,11 @@ module.exports = ->
 					"**/*.*"
 					"!**/theme*.css"
 					"!**/favicon*.*"
-					"!demos/**/*.*"
-					"!unmin/demos/**/*.*"
-					"!theme/**/*.*"
-					"!unmin/theme/**/*.*"
+					"!**/demos/**/*.*"
+					"!**/theme/**/*.*"
+					"!**/docs/**/*"
 					"!**/logo.*"
+					"!**/*.html"
 				]
 				dest: "dist/"
 			assets:
@@ -234,31 +234,6 @@ module.exports = ->
 							"*.hbs"
 						]
 						dest: "dist/unmin"
-					,
-						#plugins
-						expand: true
-						cwd: "lib/wet-boew/site/pages/demos"
-						src: [
-							"**/*.hbs"
-						]
-						dest: "dist/unmin/demos"
-					,
-						expand: true
-						cwd: "lib/wet-boew/src/plugins"
-						src: [
-							"**/*.hbs"
-						]
-						dest: "dist/unmin/demos"
-					,
-						expand: true
-						cwd: "lib/wet-boew/src/polyfills"
-						src: "**/*.hbs"
-						dest: "dist/unmin/demos"
-					,
-						expand: true
-						cwd: "lib/wet-boew/src/other"
-						src: "**/*.hbs"
-						dest: "dist/unmin/demos"
 				]
 
 			demos_min:
@@ -272,42 +247,8 @@ module.exports = ->
 						cwd: "site/pages"
 						src: [
 							"*.hbs",
-							"!index.hbs"
 						]
 						dest: "dist"
-					,
-						#index
-						expand: true
-						cwd: "site/pages"
-						src: [
-							"index.hbs"
-						]
-						dest: "dist"
-					,
-						#plugins
-						expand: true
-						cwd: "lib/wet-boew/site/pages/demos"
-						src: [
-							"**/*.hbs"
-						]
-						dest: "dist/demos"
-					,
-						expand: true
-						cwd: "lib/wet-boew/src/plugins"
-						src: [
-							"**/*.hbs"
-						]
-						dest: "dist/demos"
-					,
-						expand: true
-						cwd: "lib/wet-boew/src/polyfills"
-						src: "**/*.hbs"
-						dest: "dist/demos"
-					,
-						expand: true
-						cwd: "lib/wet-boew/src/other"
-						src: "**/*.hbs"
-						dest: "dist/demos"
 				]
 
 		htmlcompressor:
