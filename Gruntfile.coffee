@@ -297,6 +297,21 @@ module.exports = ->
 						middlewares.push(connect.static(options.base));
 						middlewares
 
+		"gh-pages":
+			options:
+				base: "dist"
+
+			travis:
+				options:
+					repo: "https://" + process.env.GH_TOKEN + "@github.com/LaurentGoderre/project.git"
+					branch: "<%= pkg.name %>"
+					message: "Travis build " + process.env.TRAVIS_BUILD_NUMBER
+					silent: true
+				src: [
+					"**/*.*"
+					"!unmin/**/*.*"
+				]
+
 	# These plugins provide necessary tasks.
 	@loadNpmTasks "assemble"
 	@loadNpmTasks "grunt-autoprefixer"
