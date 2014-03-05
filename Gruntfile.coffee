@@ -304,7 +304,7 @@ module.exports = ->
 			travis:
 				options:
 					repo: "https://" + process.env.GH_TOKEN + "@github.com/LaurentGoderre/project.git"
-					branch: "<%= pkg.name %>"
+					branch: "gh-pages"
 					message: "Travis build " + process.env.TRAVIS_BUILD_NUMBER
 					silent: true
 				src: [
