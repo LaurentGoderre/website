@@ -7,3 +7,67 @@
 /*
   @title: Small view and under (screen only)
  */
+
+%full-height {
+	height: 100%;
+}
+
+#wb-bnr {
+	position: relative;
+}
+
+#wb-glb-mn {
+	@extend %full-height;
+	position: absolute;
+	z-index: 1;
+
+	.pnl-btn {
+		@extend %full-height;
+		float: right;
+
+		li {
+			@extend %full-height;
+			display: table;
+		}
+
+		a {
+			color: #FFF;
+			font-size: 1.5em;
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+}
+
+	
+
+#mb-pnl {
+	header {
+		background : #222;
+	}
+	
+	nav {
+		a {
+			color: #000;
+			text-decoration: none;
+		}
+	}
+
+	summary {
+		&:hover, &:focus {
+			background: transparent;
+		}
+	}
+
+	.modal-body {
+		background: transparent;
+	}
+}
+
+#wb-sttl {
+	a {
+		span {
+			font-size: 150%;
+		}
+	}
+}

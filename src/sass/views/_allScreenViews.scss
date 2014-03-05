@@ -7,3 +7,44 @@
 /*
   @title: All screen views
  */
+
+#logo {
+	height: 6em;
+	margin: 0.5em 0;
+}
+
+#wb-bnr {
+	background: #000;
+}
+
+#wb-sttl {
+	a {
+		display: table;
+		color: #DFCB4E;
+
+		&:link {
+			text-decoration: none;
+		}
+
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+
+		span {
+			display: table-cell;
+			vertical-align: middle;
+			padding-left: 0.5em;
+		}
+	}
+}
+
+
+#wb-cont {
+	&.wb-inv {
+		+ {
+			p {
+				margin-top: 1em;
+			}
+		}
+	}
+}

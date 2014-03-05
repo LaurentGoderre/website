@@ -7,7 +7,7 @@
 		<meta charset="utf-8" />
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-		<title>{{title}} - {{#i18n "site.title"}}{{/i18n}}</title>
+		<title>{{title}} - {{site.title}}</title>
 		<link href="{{assets}}/assets/favicon.ico" rel="shortcut icon" />
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<!-- Meta data -->
@@ -36,12 +36,6 @@
 				<div id="wb-bar">
 					<div class="container">
 						<div class="row">
-{{#isnt languagetoggle "false"}}
-							<section id="wb-lng" class="visible-md visible-lg">
-								<h2>{{#i18n "tmpl-lang-select"}}{{/i18n}}</h2>
-								{{>languagetoggle}}
-							</section>
-{{/isnt}}
 {{#isnt mobimenu "false"}}
 							<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
 								<h2>{{#i18n "menu"}}{{/i18n}}</h2>
@@ -58,17 +52,11 @@
 						<div id="wb-sttl" class="col-md-8">
 							{{>brand}}
 						</div>
-{{#isnt sitesearch "false"}}
-						<section id="wb-srch" class="col-md-4 visible-md visible-lg">
-							<h2>{{#i18n "tmpl-search"}}{{/i18n}}</h2>
-							{{>sitesearch}}
-						</section>
-{{/isnt}}
 					</div>
 				</div>
 			</div>
 {{#isnt sitemenu "false"}}
-			<nav role="navigation" id="wb-sm" data-ajax-fetch="{{assets}}/ajax/sitemenu-{{language}}.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+			<nav role="navigation" id="wb-sm" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
 				{{>sitemenu}}
 			</nav>
 {{else}}
@@ -89,7 +77,7 @@
 			<div class="row">
 {{/is}}
 		<main role="main" property="mainContentOfPage" class="{{#is secondarymenu "true"}}col-md-9 col-md-push-3{{else}}container{{/is}}">
-			<h1 id="wb-cont" property="name">{{title}}</h1>
+			<h1 id="wb-cont" property="name"{{#is title "Home"}} class="wb-inv"{{/is}}>{{title}}</h1>
 			{{>body}}
 		</main>
 {{#is secondarymenu "true"}}
@@ -102,11 +90,13 @@
 {{/is}}
 
 {{#isnt footer "false"}}
-		<footer role="contentinfo" id="wb-info" class="container visible-md visible-lg">
-			<nav role="navigation" class="row">
-				<h2>{{#i18n "tmpl-site-info"}}{{/i18n}}</h2>
-				{{>footer}}
-			</nav>
+		<footer role="contentinfo" id="wb-info" class="visible-md visible-lg">
+			<div class="container">
+				<nav role="navigation" class="row">
+					<h2>{{#i18n "tmpl-site-info"}}{{/i18n}}</h2>
+					{{>footer}}
+				</nav>
+			</div>
 		</footer>
 {{/isnt}}
 		{{>footerresources}}

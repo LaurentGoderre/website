@@ -7,3 +7,48 @@
 /*
   @title: Medium view and over (screen only)
  */
+%dark-background {
+	background: #222;
+}
+
+%white-text {
+	color: #FFF;
+}
+
+#wb-sttl {
+	a {
+		span {
+			font-size: 200%;
+		}
+	}
+}
+
+#wb-sm {
+	@extend %dark-background;
+
+	a {
+		@extend %white-text;
+	}
+}
+
+#wb-info {
+	@extend %white-text;
+	@extend %dark-background;
+
+	h2 {
+		@extend %white-text;
+	}
+
+	h3 {
+		@extend %white-text;
+	}
+
+	a {
+		@extend %white-text;
+	}
+
+	section {
+		float: right;
+		text-align: right;
+	}
+}
