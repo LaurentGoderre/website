@@ -2,6 +2,11 @@ language: node_js
 node_js:
   - '0.10'
 
+branches:
+  except:
+    - eagle
+    - /^patch-.*$/
+
 env:
   global:
     - secure: "gKyUFyAxE7B22iUu2VfKGAvY8w981YQ+HozEia4AaBKhaSCg4W1i947/h6p5AQiJjABDByeNwW/dd+jPIBTgcQxBdUPz4QJqrOSanLMmuY/FAhecupwT9VJM2Gdv6a7F6liUi9hOyhRCzqaViuwMLfxZWhobA84Ey0MjZakH+sY="
