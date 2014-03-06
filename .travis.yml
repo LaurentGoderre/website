@@ -5,7 +5,7 @@ node_js:
 branches:
   except:
     - eagle
-    - /^patch-.*$/
+    - /^patch.*$/
 
 env:
   global:
