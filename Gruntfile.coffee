@@ -305,7 +305,7 @@ module.exports = ->
 			travis:
 				options:
 					repo: "https://" + process.env.GH_TOKEN + "@github.com/NinthLegionMilsim/NinthLegionMilsim.github.io.git"
-					branch: "gh-pages"
+					branch: "master"
 					message: "Travis build " + process.env.TRAVIS_BUILD_NUMBER
 					silent: true
 				src: [
