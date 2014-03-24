@@ -299,11 +299,12 @@ module.exports = ->
 
 		"gh-pages":
 			options:
+				clone: "github_io"
 				base: "dist"
 
 			travis:
 				options:
-					repo: "https://" + process.env.GH_TOKEN + "@github.com/LaurentGoderre/project.git"
+					repo: "https://" + process.env.GH_TOKEN + "@github.com/NinthLegionMilsim/NinthLegionMilsim.github.io.git"
 					branch: "gh-pages"
 					message: "Travis build " + process.env.TRAVIS_BUILD_NUMBER
 					silent: true
