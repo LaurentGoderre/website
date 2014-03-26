@@ -19,5 +19,9 @@
 .text {
 	fill: #ffff00;
 	stroke: #555;
-	stroke-width: 7;
+	stroke-width: 2;
+}
+
+.leaf {
+	fill: #ffff00;
 }
