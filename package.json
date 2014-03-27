@@ -1,6 +1,6 @@
 {
   "name": "9thlegion",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "test": "grunt",
     "postinstall": "bower update && cd lib/wet-boew && npm install"
