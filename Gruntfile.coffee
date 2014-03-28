@@ -1,5 +1,5 @@
 #global module:false
-module.exports = ->
+module.exports = (grunt) ->
 
 	# Default task.
 	@registerTask(
@@ -100,6 +100,8 @@ module.exports = ->
 
 		# Metadata.
 		pkg: @file.readJSON("package.json")
+		jqueryVersion: grunt.file.readJSON("lib/jquery/bower.json")
+		jqueryOldIEVersion: grunt.file.readJSON("lib/jquery-oldIE/bower.json")
 		banner: "/*!\n * Ninth Legion Milsim Website\n" +
 				" * v<%= pkg.version %> - " + "<%= grunt.template.today(\"yyyy-mm-dd\") %>\n *\n */"
 
@@ -234,6 +236,9 @@ module.exports = ->
 			demos:
 				options:
 					assets: "dist/unmin"
+				environment:
+						jqueryVersion: "<%= jqueryVersion.version %>"
+						jqueryOldIEVersion: "<%= jqueryOldIEVersion.version %>"
 				files: [
 						#site
 						expand: true
@@ -248,6 +253,8 @@ module.exports = ->
 				options:
 					environment:
 						suffix: ".min"
+						jqueryVersion: "<%= jqueryVersion.version %>"
+						jqueryOldIEVersion: "<%= jqueryOldIEVersion.version %>"
 					assets: "dist"
 				files: [
 						#site
