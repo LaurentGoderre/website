@@ -1,5 +1,5 @@
 #global module:false
-module.exports = ->
+module.exports = (grunt) ->
 
 	# Default task.
 	@registerTask(
@@ -100,7 +100,9 @@ module.exports = ->
 
 		# Metadata.
 		pkg: @file.readJSON("package.json")
-		banner: "/*!\n * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)\n * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html\n" +
+		jqueryVersion: grunt.file.readJSON("lib/jquery/bower.json")
+		jqueryOldIEVersion: grunt.file.readJSON("lib/jquery-oldIE/bower.json")
+		banner: "/*!\n * Ninth Legion Milsim Website\n" +
 				" * v<%= pkg.version %> - " + "<%= grunt.template.today(\"yyyy-mm-dd\") %>\n *\n */"
 
 		checkDependencies:
@@ -172,7 +174,7 @@ module.exports = ->
 
 		cssmin:
 			options:
-				banner: "/*!\n * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)\n * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html\n" +
+				banner: "/*!\n * Ninth Legion Milsim Website\n" +
 						" * <%= pkg.version %> - " + "<%= grunt.template.today(\"yyyy-mm-dd\") %>\n *\n */"
 			dist:
 				cwd: "dist/unmin/css"
@@ -234,6 +236,9 @@ module.exports = ->
 			demos:
 				options:
 					assets: "dist/unmin"
+				environment:
+						jqueryVersion: "<%= jqueryVersion.version %>"
+						jqueryOldIEVersion: "<%= jqueryOldIEVersion.version %>"
 				files: [
 						#site
 						expand: true
@@ -248,6 +253,8 @@ module.exports = ->
 				options:
 					environment:
 						suffix: ".min"
+						jqueryVersion: "<%= jqueryVersion.version %>"
+						jqueryOldIEVersion: "<%= jqueryOldIEVersion.version %>"
 					assets: "dist"
 				files: [
 						#site
