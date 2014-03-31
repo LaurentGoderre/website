@@ -49,6 +49,7 @@ module.exports = (grunt) ->
 		"deploy"
 		"Build and deploy artifacts to wet-boew-dist"
 		[
+			"copy:deploy"
 			"gh-pages:travis"
 		]
 	)
@@ -142,6 +143,10 @@ module.exports = (grunt) ->
 				cwd: "src/js"
 				src: "**/*.js"
 				dest: "dist/unmin/js"
+			deploy:
+				expand: true
+				src: "CNAME"
+				dest: "dist"
 
 		sass:
 			base:
