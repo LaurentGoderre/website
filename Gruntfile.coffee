@@ -321,7 +321,7 @@ module.exports = (grunt) ->
 					message: "Travis build " + process.env.TRAVIS_BUILD_NUMBER
 					silent: true
 				src: [
-					"**/*.*"
+					"**/*"
 					"!unmin/**/*.*"
 				]
 
