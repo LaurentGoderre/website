@@ -1,21 +1,28 @@
 /* Eagle*/
 
-.base{fill: #dadada;}
-.borders{fill: #222;}
-.shading{fill: #c6c6c6;}
-.globe{fill: #b3b3b3}
+.base{fill: #d8cfb2;}
+.borders{fill: #554e3c;}
+.shading{fill: #c3b391;}
+.globe{fill: #88806b;}
 
 /* Patch */
 
-.outer, .background{
-	fill: #000;
+.outer {
+	fill: #554e3c;
 }
 
-.inner, .leaf, .text {
-	fill: #dfcb4e;
+.background{
+	fill: url(Atacs_AU.svg#pattern);
+	stroke:#554e3c;
+	stroke-width: 4;
 }
 
-.text {
-	stroke: #222;
+.inner{
+	fill: #635d47;
+}
+
+.leaf, .text {
+	fill: #8c8863;
+	stroke: #554e3c;
 	stroke-width: 2;
 }
