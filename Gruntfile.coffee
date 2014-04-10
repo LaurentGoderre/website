@@ -6,6 +6,7 @@ module.exports = (grunt) ->
 		"default"
 		"Default task, that runs the production build"
 		[
+			"hub"
 			"dist"
 		]
 	)
@@ -37,7 +38,6 @@ module.exports = (grunt) ->
 		"Produces unminified files"
 		[
 			"clean:dist"
-			"hub"
 			"copy:wetboew"
 			"assets"
 			"css"

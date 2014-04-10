@@ -45,3 +45,20 @@
 main {
 	padding-top: 1em;
 }
+
+.servererror {
+	text-align: center;
+
+	#logo {
+		height: 12em;
+		width: 8em;
+	}
+
+	h1 {
+		margin-bottom: 1em;
+	}
+
+	.glyphicon {
+		margin: 0 0.5em;
+	}
+}
