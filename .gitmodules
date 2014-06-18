@@ -1,0 +1,4 @@
+[submodule "symbols"]
+	path = symbols
+	url = https://github.com/9thLegionMilsim/website.git
+	branch = symbols
