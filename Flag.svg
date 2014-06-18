@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="3240"
+   height="2160">
+  <g>
+    <rect
+       width="3240"
+       height="2160"
+       x="0"
+       y="0" />
+    <use
+       xlink:href="symbols/9thLegionText.svg#9thLegionText"
+       x="-612"
+       y="112"
+       width="4465"
+       height="1935" />
+  </g>
+</svg>
