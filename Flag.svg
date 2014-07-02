@@ -3,16 +3,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
-   width="10813"
-   height="7198"
-   viewBox="0 0 3240 2160"
+   width="18000"
+   height="10800"
+   viewBox="0 0 3240 1944"
    style="background:#000;">
   <g>
     <use
        xlink:href="symbols/9thLegionText.svg#9thLegionText"
-       x="-612"
-       y="112"
-       width="4465"
-       height="1935" />
+       x="-473"
+       y="145"
+       width="4182"
+       height="1652" />
   </g>
 </svg>
