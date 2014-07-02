@@ -5,13 +5,9 @@
    version="1.1"
    width="10813"
    height="7198"
-   viewBox="0 0 3240 2160">
+   viewBox="0 0 3240 2160"
+   style="background:#000;">
   <g>
-    <rect
-       width="3240"
-       height="2160"
-       x="0"
-       y="0" />
     <use
        xlink:href="symbols/9thLegionText.svg#9thLegionText"
        x="-612"
