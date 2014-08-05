@@ -11,10 +11,6 @@
     "tests"
   ],
   "devDependencies": {
-	 "wet-boew": "git://github.com/wet-boew/wet-boew.git#v4.0.0"
-  },
-  "resolutions": {
-    "jquery": "~2.1.0"
+    "wet-boew": "git://github.com/wet-boew/wet-boew.git#v4.0.4"
   }
 }
-
