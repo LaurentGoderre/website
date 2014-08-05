@@ -104,7 +104,7 @@ module.exports = (grunt) ->
 		jqueryVersion: grunt.file.readJSON("lib/jquery/bower.json")
 		jqueryOldIEVersion: grunt.file.readJSON("lib/jquery-oldIE/bower.json")
 		banner: "/*!\n * Ninth Legion Milsim Website\n" +
-				" * v<%= pkg.version %> - " + "<%= grunt.template.today(\"yyyy-mm-dd\") %>\n *\n */"
+				" * v<%= pkg.version %> - " + "<%= grunt.template.today('yyyy-mm-dd') %>\n *\n */"
 
 		checkDependencies:
 			all:
@@ -179,8 +179,7 @@ module.exports = (grunt) ->
 
 		cssmin:
 			options:
-				banner: "/*!\n * Ninth Legion Milsim Website\n" +
-						" * <%= pkg.version %> - " + "<%= grunt.template.today(\"yyyy-mm-dd\") %>\n *\n */"
+				banner: "@charset \"utf-8\";\n<%= banner %>"
 			dist:
 				cwd: "dist/unmin/css"
 				src: [
