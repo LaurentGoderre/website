@@ -2,6 +2,16 @@
   @title: All screen views
  */
 
+%dark-background {
+	background: #222;
+}
+
+%white-text {
+	color: #FFF;
+}
+
+
+
 #logo {
 	height: 8em;
 	width: 8.8em;
@@ -45,6 +55,29 @@
 main {
 	padding-top: 1em;
 }
+
+#wb-info2 {
+	@extend %white-text;
+	@extend %dark-background;
+
+	h2 {
+		@extend %accessible-invisible;
+	}
+
+	h3 {
+		@extend %white-text;
+	}
+
+	a {
+		@extend %white-text;
+	}
+
+	section {
+		float: right;
+		text-align: right;
+	}
+}
+
 
 .servererror {
 	text-align: center;

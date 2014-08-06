@@ -25,25 +25,3 @@
 		@extend %white-text;
 	}
 }
-
-#wb-info {
-	@extend %white-text;
-	@extend %dark-background;
-
-	h2 {
-		@extend %white-text;
-	}
-
-	h3 {
-		@extend %white-text;
-	}
-
-	a {
-		@extend %white-text;
-	}
-
-	section {
-		float: right;
-		text-align: right;
-	}
-}

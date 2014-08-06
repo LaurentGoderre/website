@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-@import "../../lib/wet-boew/src/variables";
 @import "variables";
 
 /*
@@ -10,12 +9,12 @@
 @media screen {
 	@import "views/allScreenViews";
 }
- 
+
 /* Extra-small view and under */
 @media screen and (max-width: $xSmallViewMax) {
 	@import "views/xSmallViewUnder";
 }
- 
+
 /* Small view and under */
 @media screen and (max-width: $smallViewMax) {
 	@import "views/smallViewUnder";
@@ -50,12 +49,12 @@
 @media screen and (min-width: $largeViewMin) {
 	@import "views/largeViewOver";
 }
- 
+
 /* Extra-extra-small view */
 @media screen and (max-width: $xxSmallViewMax) {
 	@import "views/xxSmallView";
 }
- 
+
 /* Extra-small view */
 @media screen and (min-width: $xSmallViewMin) and (max-width: $xSmallViewMax) {
 	@import "views/xSmallView";
