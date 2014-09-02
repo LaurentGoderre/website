@@ -9,9 +9,9 @@
   <defs>
     <style>
         .outer, .background{fill: #000;}
-        .leaf {fill: #dfcb4e!important;}
-        .inner, .text {fill: #BEC2C4;}
-        .ribbon-inner {fill:#000; stroke: #BEC2C4; stroke-width:10;}
+        .leaf {fill: #910000!important;}
+        .inner, .text {fill: #dfcb4e;}
+        .ribbon-inner {fill:#000; stroke: #dfcb4e; stroke-width:10;}
     </style>
   </defs>
   <g>
