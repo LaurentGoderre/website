@@ -6,7 +6,6 @@ module.exports = (grunt) ->
 		"default"
 		"Default task, that runs the production build"
 		[
-			"hub"
 			"dist"
 		]
 	)
@@ -42,6 +41,15 @@ module.exports = (grunt) ->
 			"assets"
 			"css"
 			"js"
+		]
+	)
+
+	@registerTask(
+		"init"
+		"Only needed when the repo is first cloned"
+		[
+			"install-dependencies"
+			"hub"
 		]
 	)
 
@@ -292,6 +300,11 @@ module.exports = (grunt) ->
 					"dist"
 				]
 
+		"install-dependencies":
+			options:
+				cwd: "lib/wet-boew"
+				failOnError: false
+
 		connect:
 			options:
 				port: 8000
@@ -338,6 +351,7 @@ module.exports = (grunt) ->
 	@loadNpmTasks "grunt-gh-pages"
 	@loadNpmTasks "grunt-htmlcompressor"
 	@loadNpmTasks "grunt-hub"
+	@loadNpmTasks "grunt-install-dependencies"
 	@loadNpmTasks "grunt-sass"
 
 	@
