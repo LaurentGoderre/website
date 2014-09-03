@@ -2,15 +2,6 @@ language: node_js
 node_js:
   - '0.10'
 
-branches:
-  except:
-    - eagle
-    - /^patch.*$/
-
-env:
-  global:
-    - secure: "LwCijGuhgb9rzBew1TKzukPtvGFeZznOOUY5mfUjs9TvfWj0fykZcupPFUfaoLOCu5qo0rBmSaJIt9eA8ZB4x3JtbU4o1LI2UJCyKGRIRjrt5aBaigszAfDbpasaecplKcSZARYaxOsDDwIXi3A2qduauJ39UIw0CMtWeEuVlWM="
-
 install:
   - scripts/setup
 
