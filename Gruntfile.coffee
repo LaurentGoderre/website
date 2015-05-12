@@ -85,6 +85,7 @@ module.exports = (grunt) ->
 		"INTERNAL: Process non-CSS/JS assets to dist"
 		[
 			"copy:assets_min"
+			"copy:docs_min"
 		]
 	)
 
@@ -93,6 +94,7 @@ module.exports = (grunt) ->
 		"INTERNAL: Process non-CSS/JS assets to dist"
 		[
 			"copy:assets"
+			"copy:docs"
 		]
 	)
 
@@ -146,6 +148,16 @@ module.exports = (grunt) ->
 				cwd: "src/assets"
 				src: "**/*.*"
 				dest: "dist/assets"
+			docs:
+				expand: true
+				cwd: "src/docs"
+				src: "**/*.*"
+				dest: "dist/unmin/docs"
+			docs_min:
+				expand: true
+				cwd: "src/docs"
+				src: "**/*.*"
+				dest: "dist/docs"
 			js:
 				expand: true
 				cwd: "src/js"
