@@ -13,7 +13,7 @@
       .shading {fill: #36393e!important;}
       .globe {fill: #222631!important;}
       .outer {fill: #12161b!important;}
-      .background, .ribbon-inner {fill: url(#atacs_le)!important;stroke:#000!important;}
+      .background, .ribbon-inner {fill: url(#atacs_le)!important;}
       .inner {fill: #20272f!important;}
       .leaf, .text {fill: #43464b!important;stroke: #000!important;}
     </style>

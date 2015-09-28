@@ -13,7 +13,7 @@
       .shading{fill: #c3b391!important;}
       .globe{fill: #88806b!important;}
       .outer {fill: #554e3c!important;}
-      .background, .ribbon-inner{fill: url(#atacs_au)!important;stroke:#554e3c!important;}
+      .background, .ribbon-inner{fill: url(#atacs_au)!important;}
       .inner{fill: #635d47!important;}
       .leaf, .text {fill:#8c8863!important;stroke: #554e3c!important;}
     </style>

@@ -13,7 +13,7 @@
       .shading{fill: #a1927a!important;}
       .globe{fill: #8b7c57!important;}
       .outer {fill: #3B2F23!important;}
-      .background, .ribbon-inner{fill: url(#multicam)!important;stroke:#3B2F23!important;}
+      .background, .ribbon-inner{fill: url(#multicam)!important;}
       .inner{fill: #81613E;}
       .leaf, .text {fill: #586240!important;stroke: #3B2F23!important;}
     </style>
