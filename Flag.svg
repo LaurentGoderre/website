@@ -7,6 +7,20 @@
    height="3ft"
    viewBox="0 0 3240 1944"
    style="background:#000;">
+  <defs>
+    <style>
+        .NinthLegionName, .NinthLegionSlogan {fill: #fff;}
+    </style>
+    <style>
+        .leaf {fill: #ffff00;}
+    </style>
+    <style>
+        .base{fill: #dadada;}
+        .borders{fill: #333333;}
+        .shading{fill: #c6c6c6;}
+        .globe{fill: #b3b3b3}
+    </style>
+  </defs>
   <g>
     <use
        xlink:href="symbols/9thLegionText.svg#9thLegionText"

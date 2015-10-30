@@ -13,6 +13,12 @@
         .inner, .text {fill: #BEC2C4;}
         .ribbon-inner {fill:#000; }
     </style>
+    <style>
+        .base{fill: #dadada;}
+        .borders{fill: #333333;}
+        .shading{fill: #c6c6c6;}
+        .globe{fill: #b3b3b3}
+      </style>
     <symbol
        viewBox="0 0 686.62499 939.2232"
        preserveAspectRatio="xMidYMid meet"

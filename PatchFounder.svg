@@ -13,6 +13,12 @@
         .inner, .text {fill: #dfcb4e;}
         .ribbon-inner {fill:#000; stroke: #dfcb4e; stroke-width:10;}
     </style>
+    <style>
+        .base{fill: #dadada;}
+        .borders{fill: #333333;}
+        .shading{fill: #c6c6c6;}
+        .globe{fill: #b3b3b3}
+    </style>
   </defs>
   <g>
     <use
