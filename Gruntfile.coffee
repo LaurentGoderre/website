@@ -266,7 +266,8 @@ module.exports = (grunt) ->
 		"install-dependencies":
 			options:
 				cwd: "lib/wet-boew"
-				failOnError: false
+				failOnError: true
+				isDevelopment: true
 
 		connect:
 			options:
