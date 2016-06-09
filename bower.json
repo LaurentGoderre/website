@@ -11,6 +11,6 @@
     "tests"
   ],
   "devDependencies": {
-    "wet-boew": "git://github.com/wet-boew/wet-boew.git#4.0.6"
+    "wet-boew": "git://github.com/wet-boew/wet-boew.git#master"
   }
 }

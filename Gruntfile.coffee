@@ -16,7 +16,6 @@ module.exports = (grunt) ->
 		[
 			"checkDependencies"
 			"build"
-			"assets-dist"
 			"assemble"
 			"htmlcompressor"
 		]
@@ -81,15 +80,6 @@ module.exports = (grunt) ->
 	)
 
 	@registerTask(
-		"assets-dist"
-		"INTERNAL: Process non-CSS/JS assets to dist"
-		[
-			"copy:assets_min"
-			"copy:docs_min"
-		]
-	)
-
-	@registerTask(
 		"assets"
 		"INTERNAL: Process non-CSS/JS assets to dist"
 		[
@@ -111,9 +101,10 @@ module.exports = (grunt) ->
 
 		# Metadata.
 		pkg: @file.readJSON("package.json")
+		themeDist: "dist/<%= pkg.name %>"
 		jqueryVersion: grunt.file.readJSON("lib/jquery/bower.json")
 		jqueryOldIEVersion: grunt.file.readJSON("lib/jquery-oldIE/bower.json")
-		banner: "/*!\n * Ninth Legion Milsim Website\n" +
+		banner: "/*!\n * 9th Legion Milsim Website\n" +
 				" * v<%= pkg.version %> - " + "<%= grunt.template.today('yyyy-mm-dd') %>\n *\n */"
 
 		checkDependencies:
@@ -128,31 +119,19 @@ module.exports = (grunt) ->
 				expand: true
 				cwd: "lib/wet-boew/dist"
 				src: [
-					"**/*.*"
-					"!**/theme*.css"
-					"!**/favicon*.*"
-					"!**/demos/**/*.*"
-					"!**/theme/**/*.*"
-					"!**/docs/**/*"
-					"!**/logo.*"
-					"!**/*.html"
+					"wet-boew/**/*.*"
 				]
-				dest: "dist/"
+				dest: "dist"
 			assets:
 				expand: true
 				cwd: "src/assets"
 				src: "**/*.*"
-				dest: "dist/unmin/assets"
-			assets_min:
-				expand: true
-				cwd: "src/assets"
-				src: "**/*.*"
-				dest: "dist/assets"
+				dest: "<%= themeDist %>/assets"
 			docs:
 				expand: true
 				cwd: "src/docs"
 				src: "**/*.*"
-				dest: "dist/unmin/docs"
+				dest: "dist/docs"
 			docs_min:
 				expand: true
 				cwd: "src/docs"
@@ -162,7 +141,7 @@ module.exports = (grunt) ->
 				expand: true
 				cwd: "src/js"
 				src: "**/*.js"
-				dest: "dist/unmin/js"
+				dest: "<%= themeDist %>/js"
 			deploy:
 				expand: true
 				src: "CNAME"
@@ -173,7 +152,7 @@ module.exports = (grunt) ->
 				expand: true
 				cwd: "src/sass"
 				src: "*theme.scss"
-				dest: "dist/unmin/css"
+				dest: "<%= themeDist %>/css"
 				ext: ".css"
 
 		autoprefixer:
@@ -188,12 +167,12 @@ module.exports = (grunt) ->
 					"ios 5"
 				]
 			all:
-				cwd: "dist/css"
+				cwd: "<%= themeDist %>/css"
 				src: [
 					"**/*.css"
 					"!**/*.min.css"
 				]
-				dest: "dist/css"
+				dest: "<%= themeDist %>/css"
 				expand: true
 				flatten: true
 
@@ -201,7 +180,7 @@ module.exports = (grunt) ->
 			options:
 				banner: "@charset \"utf-8\";\n<%= banner %>"
 			dist:
-				cwd: "dist/unmin/css"
+				cwd: "<%= themeDist %>/css"
 				src: [
 					"**/*.css"
 					"!**/wet-boew.css"
@@ -209,19 +188,7 @@ module.exports = (grunt) ->
 					"!**/*.min.css"
 				]
 				ext: ".min.css"
-				dest: "dist/css"
-				expand: true
-
-			distWET:
-				options:
-					banner: ""
-				cwd: "dist/unmin/css"
-				src: [
-					"**/wet-boew.css"
-					"**/ie8-wet-boew.css"
-				]
-				ext: ".min.css"
-				dest: "dist/css"
+				dest: "<%= themeDist %>/css"
 				expand: true
 
 		# Minify
@@ -230,9 +197,9 @@ module.exports = (grunt) ->
 				options:
 					banner: "<%= banner %>"
 				expand: true
-				cwd: "dist/unmin/js/"
+				cwd: "<%= themeDist %>/js/"
 				src: ["*.js"]
-				dest: "dist/js/"
+				dest: "<%= themeDist %>/js/"
 				ext: ".min.js"
 
 		assemble:
@@ -258,22 +225,6 @@ module.exports = (grunt) ->
 				layout: "default.hbs"
 
 			demos:
-				options:
-					assets: "dist/unmin"
-				environment:
-						jqueryVersion: "<%= jqueryVersion.version %>"
-						jqueryOldIEVersion: "<%= jqueryOldIEVersion.version %>"
-				files: [
-						#site
-						expand: true
-						cwd: "site/pages"
-						src: [
-							"*.hbs"
-						]
-						dest: "dist/unmin"
-				]
-
-			demos_min:
 				options:
 					environment:
 						suffix: ".min"
@@ -324,13 +275,11 @@ module.exports = (grunt) ->
 			server:
 				options:
 					base: "dist"
-					middleware: (connect, options) ->
-						middlewares = []
-						middlewares.push(connect.compress(
+					middleware: (connect, options, middlewares) ->
+						middlewares.unshift(connect.compress(
 							filter: (req, res) ->
 								/json|text|javascript|dart|image\/svg\+xml|application\/x-font-ttf|application\/vnd\.ms-opentype|application\/vnd\.ms-fontobject/.test(res.getHeader('Content-Type'))
 						))
-						middlewares.push(connect.static(options.base));
 						middlewares
 
 		"gh-pages":
@@ -357,7 +306,6 @@ module.exports = (grunt) ->
 	@loadNpmTasks "grunt-contrib-connect"
 	@loadNpmTasks "grunt-contrib-copy"
 	@loadNpmTasks "grunt-contrib-cssmin"
-	@loadNpmTasks "grunt-contrib-jshint"
 	@loadNpmTasks "grunt-contrib-uglify"
 	@loadNpmTasks "grunt-contrib-watch"
 	@loadNpmTasks "grunt-gh-pages"

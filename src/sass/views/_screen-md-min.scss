@@ -1,14 +1,6 @@
-
 /*
   @title: Medium view and over (screen only)
  */
-%dark-background {
-	background: #222;
-}
-
-%white-text {
-	color: #FFF;
-}
 
 #wb-sttl {
 	a {
@@ -19,9 +11,9 @@
 }
 
 #wb-sm {
-	@extend %dark-background;
+	background: #222;
 
 	a {
-		@extend %white-text;
+		color: #FFF;
 	}
 }
