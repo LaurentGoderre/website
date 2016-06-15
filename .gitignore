@@ -7,6 +7,7 @@ node_modules/*
 .sass-cache/
 jshint.out.xml
 csslint.out.xml
+symbols/
 
 
 # OS generated files #
