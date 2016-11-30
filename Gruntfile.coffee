@@ -129,14 +129,14 @@ module.exports = (grunt) ->
 						dest: "<%= themeDist %>/assets"
 					,
 						expand: true
-						cwd: "src/docs"
+						cwd: "site/docs"
 						src: "**/*.*"
-						dest: "<%= themeDist %>/docs"
+						dest: "dist/docs"
 					,
 						expand: true
-						cwd: "src/branding"
+						cwd: "site/assets"
 						src: "**/*.*"
-						dest: "<%= themeDist %>/assets"
+						dest: "dist/assets"
 				]
 			js:
 				expand: true
