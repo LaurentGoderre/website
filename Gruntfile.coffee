@@ -291,7 +291,7 @@ module.exports = (grunt) ->
 
 			travis:
 				options:
-					repo: "https://" + process.env.GH_TOKEN + "@github.com/NinthLegionMilsim/NinthLegionMilsim.github.io.git"
+					repo: process.env.DIST_REPO
 					branch: "master"
 					message: "Travis build " + process.env.TRAVIS_BUILD_NUMBER
 					silent: true
