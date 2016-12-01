@@ -294,7 +294,6 @@ module.exports = (grunt) ->
 					repo: process.env.DIST_REPO
 					branch: "master"
 					message: "Travis build " + process.env.TRAVIS_BUILD_NUMBER
-					silent: true
 				src: [
 					"**/*"
 					"!unmin/**/*.*"
