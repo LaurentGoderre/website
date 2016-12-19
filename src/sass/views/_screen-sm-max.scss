@@ -35,13 +35,13 @@
 	}
 }
 
-	
+
 
 #mb-pnl {
 	header {
 		background : #222;
 	}
-	
+
 	nav {
 		a {
 			color: #000;
@@ -67,4 +67,10 @@
 			font-size: 150%;
 		}
 	}
+}
+
+img {
+    &.member {
+        max-height: 300px;
+    }
 }
